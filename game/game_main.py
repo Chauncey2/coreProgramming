@@ -1,4 +1,4 @@
-from game import game_map, hero_plane
+from game import game_map, planes
 import pygame
 import sys
 
@@ -23,7 +23,16 @@ class GameWindow(object):
         # 创建地图实例
         self.game_map = game_map.GameMap()
         # 创建玩家飞机
-        self.hero_plane = hero_plane.HeroPlane()
+        self.hero_plane = planes.HeroPlane()
+
+        # 创建一波敌机
+        self.enemy_list = [planes.EnemyPlane() for _ in range(6)]
+
+        # 添加背景音乐
+        pygame.mixer_music.load('res/musics/bg2.ogg')
+        pygame.mixer_music.play(-1)
+        # 加载碰撞音效
+        self.boom_sound = pygame.mixer.Sound('res/musics/bomb.wav')
 
     def run(self):
 
@@ -32,6 +41,7 @@ class GameWindow(object):
             self.__draw()
             self.__event()
             self.__update()
+            self.__hit_enemy()
 
     def __action(self):
         """
@@ -43,6 +53,10 @@ class GameWindow(object):
         for bullet in self.hero_plane.bullet_list:
             if bullet.is_shot:
                 bullet.move_up()
+
+        # 敌机做自由落体运动
+        for enemy in self.enemy_list:
+            enemy.move_down()
 
     def __draw(self):
         """
@@ -60,6 +74,10 @@ class GameWindow(object):
         for bul in self.hero_plane.bullet_list:
             if bul.is_shot:
                 self.window.blit(bul.bullet_img, (bul.bullet_img_rect[0], bul.bullet_img_rect[1]))
+
+        # 添加敌机
+        for enemy in self.enemy_list:
+            self.window.blit(enemy.img, (enemy.img_rect[0], enemy.img_rect[1]))
 
     def __event(self):
         """
@@ -104,8 +122,28 @@ class GameWindow(object):
         """
         pygame.display.update()
 
+    def __hit_enemy(self):
+        """
+        碰撞检测
+        :return:
+        """
+        for bullet in self.hero_plane.bullet_list:
+            if bullet.is_shot:
+                for enemy in self.enemy_list:
+                    is_hit = pygame.Rect.colliderect(bullet.bullet_img_rect, enemy.img_rect)
+                    if is_hit:
+                        bullet.is_shot = False
+                        enemy.reset()
+                        # 播放爆炸音效
+                        self.boom_sound.play()
+                        # 更新分数
+
     def game_over(self):
+        # 停止背景音乐
+        pygame.mixer.music.stop()
+        # 停止音效
+        self.boom_sound.stop()
+        # 停止游戏引擎
         pygame.quit()
+        # 关闭窗口，退出游戏，
         sys.exit()
-
-
