@@ -1,4 +1,4 @@
-from game import game_map, planes
+from game import game_map, planes, game_score
 import pygame
 import sys
 
@@ -33,6 +33,9 @@ class GameWindow(object):
         pygame.mixer_music.play(-1)
         # 加载碰撞音效
         self.boom_sound = pygame.mixer.Sound('res/musics/bomb.wav')
+
+        # 加载分数
+        self.game_score = game_score.GameScore(35)
 
     def run(self):
 
@@ -78,6 +81,9 @@ class GameWindow(object):
         # 添加敌机
         for enemy in self.enemy_list:
             self.window.blit(enemy.img, (enemy.img_rect[0], enemy.img_rect[1]))
+
+        # 添分数文字
+        self.window.blit(self.game_score.text_obj, (10, 10))
 
     def __event(self):
         """
@@ -137,6 +143,7 @@ class GameWindow(object):
                         # 播放爆炸音效
                         self.boom_sound.play()
                         # 更新分数
+                        self.game_score.set_text()
 
     def game_over(self):
         # 停止背景音乐
