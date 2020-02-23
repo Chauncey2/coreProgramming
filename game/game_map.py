@@ -2,7 +2,6 @@ import random
 import pygame
 
 WINDOW_WIDTH = 512
-
 WINDOW_HEIGHT = 768
 
 
