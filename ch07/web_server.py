@@ -3,7 +3,6 @@ import multiprocessing
 import re
 from ch07.dynamic import mini_framework
 
-BASE_URL=''
 
 class WSGIServer:
     def __init__(self):
@@ -82,8 +81,6 @@ class WSGIServer:
 
     def set_headers(self, status, headers):
         print("-----web_server.py set_headers 被调用-----")
-        # status ---> 200 OK
-        # headers--->[("Content-Type", "text/html;")]
         response_header = "HTTP/1.1 %s\r\n" % status
         for temp in headers:
             response_header += "%s: %s\r\n" % (temp[0], temp[1])

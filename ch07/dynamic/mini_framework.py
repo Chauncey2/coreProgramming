@@ -1,17 +1,33 @@
 import time
 import re
 
+# 路由：根据不一样的请求，不一样的函数去服务器
+# key是浏览器中可能输入的url
+# value是url需要调用的函数的引用
+# 通过这个字典，做到了只要添加一行 key-value就完成了 对应服务的设定
 
+url_func_dict = dict()  # 路由
+
+
+def route(url):
+    def set_func(func):
+        url_func_dict[url] = func
+
+    return set_func
+
+
+@route('/index.html')
 def index():
     """
     打开对应的模板页
     :return: html
     """
-    with open("../templates/index.html",encoding='utf-8') as f:
+    with open("../templates/index.html", encoding='utf-8') as f:
         html_content = f.read()
     return html_content
 
 
+@route('/center.html')
 def center():
     """
     打开内容页
@@ -19,33 +35,27 @@ def center():
     """
     with open("../templates/center.html", encoding="utf-8") as f:
         html_content = f.read()
+
     data_from_mysql = "这里是从mysql中查询出来的数据"
+
     html_content = re.sub(r"\{%content%\}", data_from_mysql, html_content)
 
     return html_content
 
 
+@route('/register.html')
 def register():
     return "-----注册页面----current time is %s" % time.ctime()
 
+
+@route('/login.html')
 def login():
     return "-----登陆页面----current time is %s" % time.ctime()
 
 
+@route('/unregister.html')
 def unregister():
     return "-----注销页面----current time is %s" % time.ctime()
-
-# 路由：根据不一样的请求，不一样的函数去服务器
-# key是浏览器中可能输入的url
-# value是url需要调用的函数的引用
-# 通过这个字典，做到了只要添加一行 key-value就完成了 对应服务的设定
-url_func_dict = {
-    "/index.py": index,
-    "/center.py": center,
-    "/register.py": register,
-    "/login.py": login,
-    "/unregister.py": unregister
-}
 
 
 def application(env, set_header):
@@ -79,7 +89,6 @@ def application(env, set_header):
 
     # 2. 通过return 将body返回
     return response_body
-
 
 
 if __name__ == '__main__':
