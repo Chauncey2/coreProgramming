@@ -5,6 +5,7 @@ from ch07.dynamic import mini_framework
 
 
 class WSGIServer:
+
     def __init__(self):
         """
         初始化功能，创建套接字/绑定等
@@ -82,6 +83,7 @@ class WSGIServer:
     def set_headers(self, status, headers):
         print("-----web_server.py set_headers 被调用-----")
         response_header = "HTTP/1.1 %s\r\n" % status
+
         for temp in headers:
             response_header += "%s: %s\r\n" % (temp[0], temp[1])
         response_header += "\r\n"

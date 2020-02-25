@@ -17,13 +17,13 @@ def route(url):
     return set_func
 
 
-@route('/index.html')
+# @route('/index.html')
 def index():
     """
     打开对应的模板页
     :return: html
     """
-    with open("./templates/index.html", encoding='utf-8') as f:
+    with open("../templates/index.html", encoding='utf-8') as f:
         html_content = f.read()
 
     # 将mysql查询出来的数据替换到模板中
@@ -53,6 +53,7 @@ def index():
     data_from_mysql = cursor.fetchall()
     cursor.close()
     conn.close()
+    print("数据库中的数据为：", data_from_mysql)
 
     for temp in data_from_mysql:
         code_html+=line_html % (temp[0],temp[1],temp[2],temp[3],
@@ -62,26 +63,26 @@ def index():
     return html_content
 
 
-@route('/center.html')
+# @route('/center.html')
 def center():
     """
     打开内容页
     :return: html page
     """
-    with open("./templates/center.html", encoding="utf-8") as f:
+    with open("../templates/center.html", encoding="utf-8") as f:
         html_content = f.read()
 
     conn = pymysql.connect(host='localhost', port=3306, user='root', password='841211gw', database='stock_db',
                            charset='utf8')
     cursor = conn.cursor()
-    sql = """
-    
-    """
+    sql = "SELECT * FROM info"
     cursor.execute(sql)
     data_from_mysql = cursor.fetchall()
     cursor.close()
     conn.close()
+    print("数据库中的数据为：", data_from_mysql)
     html_content = re.sub("{% content %}", data_from_mysql, html_content)
+
     return html_content
 
 
@@ -133,4 +134,4 @@ def application(env, set_header):
 
 
 if __name__ == '__main__':
-    pass
+    print(index())
