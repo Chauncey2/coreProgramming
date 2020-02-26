@@ -57,7 +57,7 @@ def index():
     for temp in data_from_mysql:
         code_html+=line_html % (temp[0],temp[1],temp[2],temp[3],
                                 temp[4],temp[5],temp[6],temp[7])
-    html_content = re.sub(r"\{% content %\}", code_html, html_content)
+    html_content = re.sub(r"{% content %}", code_html, html_content)
 
     return html_content
 
@@ -74,14 +74,39 @@ def center():
     conn = pymysql.connect(host='localhost', port=3306, user='root', password='841211gw', database='stock_db',
                            charset='utf8')
     cursor = conn.cursor()
-    sql = """
-    
-    """
+    sql = """select i.code,i.short,i.chg,i.turnover,i.price,i.highs,f.note_info from info as i 
+    inner join focus as f on i.id=f.info_id;"""
     cursor.execute(sql)
     data_from_mysql = cursor.fetchall()
     cursor.close()
     conn.close()
-    html_content = re.sub("{% content %}", data_from_mysql, html_content)
+
+    # 这是一行的模板
+    line_html = """<tr>
+                           <td>%s</td>
+                           <td>%s</td>
+                           <td>%s</td>
+                           <td>%s</td>
+                           <td>%s</td>
+                           <td>%s</td>
+                           <td>%s</td>
+                           <td>
+                           <a type="button" class="btn btn-default btn-xs" href="/update/000822.html"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 修改 </a>
+                           </td>
+                           <td>
+                           <input type="button" value="删除" id="toDel" name="toDel" systemidvaule="000822">
+                           </td>
+                       </tr>
+                   """
+
+    code_html = ""
+    for temp in data_from_mysql:
+        code_html += line_html % (temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], temp[6])
+
+
+    # 3. 替换数据
+    html_content = re.sub(r"{% content %}", code_html, html_content)
+    print(html_content)
     return html_content
 
 

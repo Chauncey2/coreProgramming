@@ -58,7 +58,7 @@ def index():
     for temp in data_from_mysql:
         code_html+=line_html % (temp[0],temp[1],temp[2],temp[3],
                                 temp[4],temp[5],temp[6],temp[7])
-    html_content = re.sub(r"\{% content %\}", code_html, html_content)
+    html_content = re.sub(r"{% content %}", code_html, html_content)
 
     return html_content
 
@@ -81,7 +81,7 @@ def center():
     cursor.close()
     conn.close()
     print("数据库中的数据为：", data_from_mysql)
-    html_content = re.sub("{% content %}", data_from_mysql, html_content)
+    html_content = re.sub(r"{% content %}", data_from_mysql, html_content)
 
     return html_content
 
