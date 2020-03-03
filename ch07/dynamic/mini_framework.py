@@ -11,14 +11,20 @@ url_func_dict = dict()  # 路由
 
 
 def route(url):
+    """
+    路由函数，返回函数对象
+    :param url:
+    :return:
+    """
+
     def set_func(func):
         url_func_dict[url] = func
 
     return set_func
 
 
-@route('/index.html')
-def index():
+@route(r'/index\.html')
+def index(res):
     """
     打开对应的模板页
     :return: html
@@ -38,11 +44,11 @@ def index():
                 <td>%s</td>
                 <td>%s</td>
                 <td>
-                    <input type="button" value="添加" id="toAdd" name="toAdd" systemidvaule="000007">
+                    <input type="button" value="添加" id="toAdd" name="toAdd" systemidvaule="%s">
                 </td>
             <tr>
     """
-    code_html=""
+    code_html = ""
 
     # 从数据库中读取数据
     conn = pymysql.connect(host='localhost', port=3306, user='root', password='841211gw', database='stock_db',
@@ -55,15 +61,15 @@ def index():
     conn.close()
 
     for temp in data_from_mysql:
-        code_html+=line_html % (temp[0],temp[1],temp[2],temp[3],
-                                temp[4],temp[5],temp[6],temp[7])
+        code_html += line_html % (temp[0], temp[1], temp[2], temp[3],
+                                  temp[4], temp[5], temp[6], temp[7], temp[1])
     html_content = re.sub(r"{% content %}", code_html, html_content)
 
     return html_content
 
 
-@route('/center.html')
-def center():
+@route(r'/center\.html')
+def center(res):
     """
     打开内容页
     :return: html page
@@ -80,7 +86,6 @@ def center():
     data_from_mysql = cursor.fetchall()
     cursor.close()
     conn.close()
-
     # 这是一行的模板
     line_html = """<tr>
                            <td>%s</td>
@@ -94,35 +99,107 @@ def center():
                            <a type="button" class="btn btn-default btn-xs" href="/update/000822.html"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 修改 </a>
                            </td>
                            <td>
-                           <input type="button" value="删除" id="toDel" name="toDel" systemidvaule="000822">
+                           <input type="button" value="删除" id="toDel" name="toDel" systemidvaule="%s">
                            </td>
                        </tr>
                    """
 
     code_html = ""
     for temp in data_from_mysql:
-        code_html += line_html % (temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], temp[6])
-
+        code_html += line_html % (temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], temp[6], temp[0])
 
     # 3. 替换数据
     html_content = re.sub(r"{% content %}", code_html, html_content)
-    print(html_content)
     return html_content
 
 
-@route('/register.html')
-def register():
+@route(r'/register\.html')
+def register(res):
     return "-----注册页面----current time is %s" % time.ctime()
 
 
-@route('/login.html')
-def login():
+@route(r'/login\.html')
+def login(res):
     return "-----登陆页面----current time is %s" % time.ctime()
 
 
-@route('/unregister.html')
-def unregister():
+@route(r'/unregister\.html')
+def unregister(res):
     return "-----注销页面----current time is %s" % time.ctime()
+
+
+@route(r'^/add/(\d+)\.html$')
+def add_focus(res):
+    # 1、获取股票代码参数
+    stock_code = res.group(1)
+    print("股票代码", stock_code)
+
+    # 2. 判断是否有这个股票
+    conn = pymysql.connect(host='localhost', port=3306, user='root', password='841211gw', database='stock_db',
+                           charset='utf8')
+    cursor = conn.cursor()  # 获取游标
+    sql = """ select * from info where code=%s; """
+    cursor.execute(sql, [stock_code])
+    data_from_mysql = cursor.fetchall()
+    if not data_from_mysql:
+        cursor.close()
+        conn.close()
+        return '查询无果'
+    # 3. 判断是否之前关注过这个股票
+    sql = """ select * from info as i inner join focus as f on i.id=f.info_id where i.code=%s; """
+    cursor.execute(sql, [stock_code])
+    data_from_mysql = cursor.fetchall()
+    if data_from_mysql:
+        # 如果要是关注过这个股票，那么就退出
+        cursor.close()
+        conn.close()
+        return "请误重复关注...."
+
+    # 4.写入数据库
+    sql = """ insert into focus (info_id) select id from info where code=%s; """
+    cursor.execute(sql, [stock_code])
+    conn.commit()
+    cursor.close()
+    conn.close()
+
+    return "-----添加关注成功----"
+
+
+@route(r'^/del/(\d+)\.html$')
+def del_focus(res):
+    # 1.获取股票代码参数
+    stock_code = res.group(1)
+    print("待删除股票代码：", stock_code)
+    # 2.检验股票代码是否存在
+    conn = pymysql.connect(host='localhost', port=3306, user='root', password='841211gw', database='stock_db',
+                           charset='utf8')
+    cursor = conn.cursor()
+    sql = """ select * from info where code=%s; """
+    cursor.execute(sql, [stock_code])
+    data_from_mysql = cursor.fetchall()
+
+    if not data_from_mysql:
+        cursor.close()
+        conn.close()
+        return '查无数据'
+
+    # 3.判断是关注过这个股票
+    sql = """ select * from info as i inner join focus as f on i.id=f.info_id where i.code=%s; """
+    cursor.execute(sql, [stock_code])
+    data_from_mysql = cursor.fetchall()
+
+    if not data_from_mysql:
+        cursor.close()
+        conn.close()
+        return '没有关注过这个股票...'
+
+    # 4.删除股票
+    sql = """delete from focus where info_id = (select id from info where code=%s);"""
+    cursor.execute(sql, [stock_code])
+    conn.commit()
+    cursor.close()
+    conn.close()
+    return "取消关注成功"
 
 
 def application(env, set_header):
@@ -132,27 +209,14 @@ def application(env, set_header):
     set_header(status, response_headers)
 
     # 提取url
-    path_info = env['PATH_INFO'].replace('.py', '.html')  # /index.py
+    path_info = env['PATH_INFO']
     try:
-        # url不一样，那么取出来的value，即函数的引用不一样
-        func = url_func_dict[path_info]  # 如果path_info是/index.py那么也就意味着取 index函数的引用
-        # 那么将来调用的时候，就调用了不一样的函数
-        response_body = func()
+        for r_url, func in url_func_dict.items():
+            ret = re.match(r_url, path_info)
+            if ret:
+                response_body = func(ret)
     except Exception as ret:
         response_body = "-----not found you page-----"
-    """
-    if path_info == "/index.py":
-        response_body = index()
-    elif path_info == "/center.py":
-        response_body = center() 
-    elif path_info == "/register.py":
-        response_body = register()
-    elif path_info == "/login.py":
-        response_body = login()
-    else:
-        response_body = "-----not found you page-----"
-    """
-
     # 2. 通过return 将body返回
     return response_body
 

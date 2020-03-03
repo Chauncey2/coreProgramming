@@ -44,11 +44,11 @@ class WSGIServer:
             path_info = '/index.html'
 
         # 用if判断来区分动态请求/静态请求
-        if not path_info.endswith(".py"):
-            # 静态请求
+        if not path_info.endswith(".html"):
+            # 如果请求是以py结尾
             try:
-                if path_info.__contains__("html"):
-                    with open('./templates/' + path_info, "rb") as f:
+                if path_info.__contains__("py"):
+                    with open('./templates' + path_info.replace("py",'html'), "rb") as f:
                         file_data = f.read()
                 else:
                     with open('./' + path_info, "rb") as f:
@@ -72,7 +72,7 @@ class WSGIServer:
             finally:
                 client_socket.close()
         else:
-            # 动态请求
+            # 如果请求是以html结尾
             env = dict()
             env["PATH_INFO"] = path_info
             response_body = mini_framework.application(env, self.set_headers)
@@ -83,10 +83,10 @@ class WSGIServer:
     def set_headers(self, status, headers):
         print("-----web_server.py set_headers 被调用-----")
         response_header = "HTTP/1.1 %s\r\n" % status
-
         for temp in headers:
             response_header += "%s: %s\r\n" % (temp[0], temp[1])
         response_header += "\r\n"
+
         self.response_header = response_header
 
     def run(self):
