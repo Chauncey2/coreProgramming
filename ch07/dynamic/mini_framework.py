@@ -96,7 +96,7 @@ def center(res):
                            <td>%s</td>
                            <td>%s</td>
                            <td>
-                           <a type="button" class="btn btn-default btn-xs" href="/update/000822.html"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 修改 </a>
+                           <a type="button" class="btn btn-default btn-xs" href="/update/%s.html"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 修改 </a>
                            </td>
                            <td>
                            <input type="button" value="删除" id="toDel" name="toDel" systemidvaule="%s">
@@ -106,7 +106,7 @@ def center(res):
 
     code_html = ""
     for temp in data_from_mysql:
-        code_html += line_html % (temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], temp[6], temp[0])
+        code_html += line_html % (temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], temp[6], temp[0], temp[0])
 
     # 3. 替换数据
     html_content = re.sub(r"{% content %}", code_html, html_content)
@@ -202,6 +202,19 @@ def del_focus(res):
     return "取消关注成功"
 
 
+@route(r'^/update/(\d+)\.html$')
+def show_edit_page(ret):
+    # 1.接收股票代码
+    stock_code = ret.group(1)
+    # 2.读取更新页原始页面
+    with open('./templates/update.html','r',encoding='utf-8') as f:
+        html = f.read()
+    # 3.填充页面
+
+    # 4.更新数据库
+    return html
+
+
 def application(env, set_header):
     # 1. 调用set_header指向的函数，将response_header传递过去
     status = '200 OK'
@@ -209,6 +222,7 @@ def application(env, set_header):
     set_header(status, response_headers)
 
     # 提取url
+    response_body='页面加载中...'
     path_info = env['PATH_INFO']
     try:
         for r_url, func in url_func_dict.items():
