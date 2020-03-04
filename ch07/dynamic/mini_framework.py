@@ -1,11 +1,13 @@
 import time
 import pymysql
 import re
+import urllib.parse
+import logging
 
-# 路由：根据不一样的请求，不一样的函数去服务器
-# key是浏览器中可能输入的url
-# value是url需要调用的函数的引用
-# 通过这个字典，做到了只要添加一行 key-value就完成了 对应服务的设定
+logging.basicConfig(level=logging.DEBUG,
+                    filename='./log.txt',
+                    filemode='a',
+                    format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s')
 
 url_func_dict = dict()  # 路由
 
@@ -229,7 +231,7 @@ def show_edit_page(ret):
 def save_edit_message(ret):
     # 1，接收信息
     stock_code = ret.group(1)  # 股票代码
-    note_info = ret.group(2)
+    note_info = urllib.parse.unquote(ret.group(2))  # 备注
     # 2，更新数据库
     conn = pymysql.connect(host='localhost', port=3306, user='root', password='841211gw', database='stock_db',
                            charset='utf8')
@@ -252,6 +254,8 @@ def application(env, set_header):
     # 提取url
     response_body = '页面加载中...'
     path_info = env['PATH_INFO']
+    logging.info("用户访问了url: %s" % path_info)
+
     try:
         for r_url, func in url_func_dict.items():
             ret = re.match(r_url, path_info)
@@ -259,6 +263,7 @@ def application(env, set_header):
                 response_body = func(ret)
     except Exception as ret:
         response_body = "-----not found you page-----"
+        logging.warning("没有对应的url....")
     # 2. 通过return 将body返回
     return response_body
 

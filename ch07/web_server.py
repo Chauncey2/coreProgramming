@@ -9,7 +9,7 @@ import sys
 
 class WSGIServer:
 
-    def __init__(self, app):
+    def __init__(self, app, port):
         """
         初始化功能，创建套接字/绑定等
         """
@@ -18,7 +18,7 @@ class WSGIServer:
         # 套接字 地址重用选项 1设置0取消
         self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         # 绑定
-        self.server_socket.bind(('', 9999))
+        self.server_socket.bind(('', port))
         # 监听，被动套接字，设置已完成三次握手队列长度
         self.server_socket.listen(128)
 
@@ -125,12 +125,16 @@ def main():
         return
 
     # 添加dynamic到sys.path
-    sys.path.append("./dynamic")
+    with open('settings.conf') as f:
+        config_str = f.read()
+
+    config_str = eval(config_str)
+    sys.path.append(config_str["framework_path"])
 
     frame = __import__(frame_name)
     app = getattr(frame, app_name)
     # 创建一个server服务对象
-    wsgi_server = WSGIServer(app)
+    wsgi_server = WSGIServer(app, config_str['port'])
 
     wsgi_server.run()
 
