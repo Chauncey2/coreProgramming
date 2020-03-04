@@ -1,12 +1,15 @@
 import socket
 import multiprocessing
 import re
-from ch07.dynamic import mini_framework
+import sys
+
+
+# from ch07.dynamic import mini_framework
 
 
 class WSGIServer:
 
-    def __init__(self):
+    def __init__(self, app):
         """
         初始化功能，创建套接字/绑定等
         """
@@ -18,6 +21,8 @@ class WSGIServer:
         self.server_socket.bind(('', 9999))
         # 监听，被动套接字，设置已完成三次握手队列长度
         self.server_socket.listen(128)
+
+        self.app = app
 
     def request_handler(self, client_socket):
         """
@@ -48,7 +53,7 @@ class WSGIServer:
             # 如果请求是以py结尾
             try:
                 if path_info.__contains__("py"):
-                    with open('./templates' + path_info.replace("py",'html'), "rb") as f:
+                    with open('./templates' + path_info.replace("py", 'html'), "rb") as f:
                         file_data = f.read()
                 else:
                     with open('./' + path_info, "rb") as f:
@@ -75,7 +80,7 @@ class WSGIServer:
             # 如果请求是以html结尾
             env = dict()
             env["PATH_INFO"] = path_info
-            response_body = mini_framework.application(env, self.set_headers)
+            response_body = self.app(env, self.set_headers)
             # 拼接response
             response = self.response_header + response_body
             client_socket.send(response.encode("utf-8"))
@@ -103,8 +108,30 @@ class WSGIServer:
 
 
 def main():
+    if len(sys.argv) != 2:
+        print("运行命令错误，参照格式：")
+        print("python xxxx.py mini_framework:application")
+        return
+    # 获取模块名已经函数名
+    frame_name = sys.argv[1]  # framework_name:application
+    # 使用正则表达式匹配
+    ret = re.match(r"(.*):(.*)", frame_name)
+    if ret:
+        frame_name = ret.group(1)  # mini_framework
+        app_name = ret.group(2)  # application
+    else:
+        print("请按照如下运行方式运行程序:")
+        print("python3 xxxx.py mini_framework:application")
+        return
+
+    # 添加dynamic到sys.path
+    sys.path.append("./dynamic")
+
+    frame = __import__(frame_name)
+    app = getattr(frame, app_name)
     # 创建一个server服务对象
-    wsgi_server = WSGIServer()
+    wsgi_server = WSGIServer(app)
+
     wsgi_server.run()
 
 
