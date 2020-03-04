@@ -12,7 +12,9 @@
         $(document).ready(function () {
             $("#update").click(function () {
                 var item = $("#note_info").val();
-                $.get("/update/{%code%}/" + item + ".html", function (data, status) {
+                var code = $("#code").text();
+                alert(code);
+                $.get("/update/" + code + "/" + item + ".html", function (data, status) {
                     alert("数据: " + data + "\n状态: " + status);
                     self.location = '/center.html';
                 });
@@ -43,7 +45,7 @@
     <div class="container-fluid">
         <div class="input-group">
             <span class="input-group-addon">正在修改：</span>
-            <span class="input-group-addon">{% code %}</span>
+            <span id="code" class="input-group-addon">{% code %}</span>
             <input id="note_info" type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
                    value="{% note_info %}">
             <span id="update" class="input-group-addon" style="cursor: pointer">修改</span>

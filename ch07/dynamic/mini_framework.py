@@ -207,12 +207,40 @@ def show_edit_page(ret):
     # 1.接收股票代码
     stock_code = ret.group(1)
     # 2.读取更新页原始页面
-    with open('./templates/update.html','r',encoding='utf-8') as f:
+    with open('./templates/update.html', 'r', encoding='utf-8') as f:
         html = f.read()
     # 3.填充页面
+    conn = pymysql.connect(host='localhost', port=3306, user='root', password='841211gw', database='stock_db',
+                           charset='utf8')
+    cursor = conn.cursor()
+    sql = """select note_info from focus where info_id=(select id from info where code=%s);"""
+    cursor.execute(sql, [stock_code])
+    data_from_mysql = cursor.fetchone()
+    cursor.close()
+    conn.close()
+    # 4.合并数据
+    html = re.sub(r"\{% note_info %\}", data_from_mysql[0], html)
+    html = re.sub(r"\{% code %\}", stock_code, html)
 
-    # 4.更新数据库
     return html
+
+
+@route(r"/update/(\d+)/(.*)\.html")
+def save_edit_message(ret):
+    # 1，接收信息
+    stock_code = ret.group(1)  # 股票代码
+    note_info = ret.group(2)
+    # 2，更新数据库
+    conn = pymysql.connect(host='localhost', port=3306, user='root', password='841211gw', database='stock_db',
+                           charset='utf8')
+    cursor = conn.cursor()
+    sql = """update focus as f inner join info as i on i.id=f.info_id set f.note_info=%s where i.code=%s;"""
+    cursor.execute(sql, [note_info, stock_code])
+    conn.commit()
+    cursor.close()
+    conn.close()
+
+    return '修改备注成功'
 
 
 def application(env, set_header):
@@ -222,7 +250,7 @@ def application(env, set_header):
     set_header(status, response_headers)
 
     # 提取url
-    response_body='页面加载中...'
+    response_body = '页面加载中...'
     path_info = env['PATH_INFO']
     try:
         for r_url, func in url_func_dict.items():
