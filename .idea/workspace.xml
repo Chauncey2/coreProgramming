@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a8c1b354-9e04-4170-a98d-eb02ac8c8d1f" name="Default Changelist" comment="web框架--http服务和web框架分离，并在命令行输入参数运行">
+      <change afterPath="$PROJECT_DIR$/test/test1.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/coreProgramming$mini_framework.coverage" NAME="mini_framework Coverage Results" MODIFIED="1582608122173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/dynamic" />
+    <SUITE FILE_PATH="coverage/coreProgramming$web_server__3_.coverage" NAME="web_server (3) Coverage Results" MODIFIED="1583316008898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
+    <SUITE FILE_PATH="coverage/coreProgramming$messagebox.coverage" NAME="messagebox Coverage Results" MODIFIED="1580985940032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Anaconda/Lib/tkinter" />
+    <SUITE FILE_PATH="coverage/coreProgramming$list_generation.coverage" NAME="list_generation Coverage Results" MODIFIED="1581666393994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch_al/basic_grammar" />
+    <SUITE FILE_PATH="coverage/coreProgramming$_plane_battle.coverage" NAME="_plane_battle Coverage Results" MODIFIED="1581931773341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
+    <SUITE FILE_PATH="coverage/coreProgramming$test5.coverage" NAME="test5 Coverage Results" MODIFIED="1581003398047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch05" />
+    <SUITE FILE_PATH="coverage/coreProgramming$run.coverage" NAME="run Coverage Results" MODIFIED="1581760264366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
+    <SUITE FILE_PATH="coverage/coreProgramming$test1__1_.coverage" NAME="test1 (1) Coverage Results" MODIFIED="1583217831633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/coreProgramming$start.coverage" NAME="start Coverage Results" MODIFIED="1581860313456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
+    <SUITE FILE_PATH="coverage/coreProgramming$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1582609009053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
+    <SUITE FILE_PATH="coverage/coreProgramming$mtsleepF.coverage" NAME="mtsleepF Coverage Results" MODIFIED="1580974061648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch04" />
+    <SUITE FILE_PATH="coverage/coreProgramming$01.coverage" NAME="01 Coverage Results" MODIFIED="1582467713282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/closures" />
+    <SUITE FILE_PATH="coverage/coreProgramming$game_main.coverage" NAME="game_main Coverage Results" MODIFIED="1581759986917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
+    <SUITE FILE_PATH="coverage/coreProgramming$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1582469055338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/decorators" />
+    <SUITE FILE_PATH="coverage/coreProgramming$plane_battle.coverage" NAME="plane_battle Coverage Results" MODIFIED="1581736074961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
+    <SUITE FILE_PATH="coverage/coreProgramming$web_server.coverage" NAME="web_server Coverage Results" MODIFIED="1582527349665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/webserver/v1.0" />
+    <SUITE FILE_PATH="coverage/coreProgramming$listdir.coverage" NAME="listdir Coverage Results" MODIFIED="1581068441402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch05" />
+    <SUITE FILE_PATH="coverage/coreProgramming$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1582469732614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/decorators" />
+    <SUITE FILE_PATH="coverage/coreProgramming$sort_util.coverage" NAME="sort_util Coverage Results" MODIFIED="1581664147140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch_al/sorted" />
+    <SUITE FILE_PATH="coverage/coreProgramming$main.coverage" NAME="main Coverage Results" MODIFIED="1582555115355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
+    <SUITE FILE_PATH="coverage/coreProgramming$web_server__2_.coverage" NAME="web_server (2) Coverage Results" MODIFIED="1582538485305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/webserver/v2" />
+    <SUITE FILE_PATH="coverage/coreProgramming$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1582613321831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/test" />
+    <SUITE FILE_PATH="coverage/coreProgramming$heapq_func_too_.coverage" NAME="heapq_func_too; Coverage Results" MODIFIED="1581667896926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch_al/basic_grammar" />
+    <SUITE FILE_PATH="coverage/coreProgramming$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1582469588458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/decorators" />
+    <SUITE FILE_PATH="coverage/coreProgramming$test.coverage" NAME="test Coverage Results" MODIFIED="1582537558587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/webserver/v2" />
+    <SUITE FILE_PATH="coverage/coreProgramming$web_server__1_.coverage" NAME="web_server (1) Coverage Results" MODIFIED="1582527686712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/webserver/v1" />
+    <SUITE FILE_PATH="coverage/coreProgramming$text4.coverage" NAME="text4 Coverage Results" MODIFIED="1580978270577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch05" />
+    <SUITE FILE_PATH="coverage/coreProgramming$project.coverage" NAME="project Coverage Results" MODIFIED="1581668453508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch_al/projects" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ch07/web_server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ch08/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ch07/dynamic/mini_framework.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7168">
+              <caret line="260" column="44" selection-start-line="260" selection-start-column="44" selection-end-line="260" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ch04/__init__.py" />
+        <option value="$PROJECT_DIR$/ch05/__init__.py" />
+        <option value="$PROJECT_DIR$/ch05/test1.py" />
+        <option value="$PROJECT_DIR$/ch05/test3.py" />
+        <option value="$PROJECT_DIR$/ch05/text4.py" />
+        <option value="$PROJECT_DIR$/ch05/test5.py" />
+        <option value="$PROJECT_DIR$/ch05/listdir.py" />
+        <option value="$PROJECT_DIR$/ch_al/sorted/sort_util.py" />
+        <option value="$PROJECT_DIR$/ch_al/basic_grammar/test1.py" />
+        <option value="$PROJECT_DIR$/ch_al/basic_grammar/list_generation.py" />
+        <option value="$PROJECT_DIR$/ch_al/basic_grammar/heapq_func_too;.py" />
+        <option value="$PROJECT_DIR$/ch_al/projects/project.py" />
+        <option value="$PROJECT_DIR$/game/plane_battle.py" />
+        <option value="$PROJECT_DIR$/game/settings.py" />
+        <option value="$PROJECT_DIR$/game/res/images/game_map.py" />
+        <option value="$PROJECT_DIR$/game/run.py" />
+        <option value="$PROJECT_DIR$/game/start.py" />
+        <option value="$PROJECT_DIR$/game/hero_plane.py" />
+        <option value="$PROJECT_DIR$/game/planes.py" />
+        <option value="$PROJECT_DIR$/game/res/game_score.py" />
+        <option value="$PROJECT_DIR$/game/game_main.py" />
+        <option value="$PROJECT_DIR$/game/bullet.py" />
+        <option value="$PROJECT_DIR$/game/game_map.py" />
+        <option value="$PROJECT_DIR$/ch07/closures/01.py" />
+        <option value="$PROJECT_DIR$/ch07/decorators/test1.py" />
+        <option value="$PROJECT_DIR$/ch07/decorators/test2.py" />
+        <option value="$PROJECT_DIR$/ch07/decorators/test3.py" />
+        <option value="$PROJECT_DIR$/ch07/decorators/test4.py" />
+        <option value="$PROJECT_DIR$/ch07/webserver/mini_webframework.py" />
+        <option value="$PROJECT_DIR$/ch07/webserver/v1.0/mini_framework.py" />
+        <option value="$PROJECT_DIR$/ch07/webserver/v1.0/web_server.py" />
+        <option value="$PROJECT_DIR$/ch07/webserver/v1/web_server.py" />
+        <option value="$PROJECT_DIR$/ch07/webserver/v2/test.py" />
+        <option value="$PROJECT_DIR$/ch07/webserver/v2/templates/index.html" />
+        <option value="$PROJECT_DIR$/ch07/webserver/v2/web_server.py" />
+        <option value="$PROJECT_DIR$/ch07/webserver/v2/templates/center.html" />
+        <option value="$PROJECT_DIR$/ch07/webserver/v2/static/js/bootstrap.min.js" />
+        <option value="$PROJECT_DIR$/ch07/webserver/v2/dynamic/mini_framework.py" />
+        <option value="$PROJECT_DIR$/ch07/main.py" />
+        <option value="$PROJECT_DIR$/ch07/test.txt" />
+        <option value="$PROJECT_DIR$/ch07/test.py" />
+        <option value="$PROJECT_DIR$/ch07/test/test1.py" />
+        <option value="$PROJECT_DIR$/test/test1.py" />
+        <option value="$PROJECT_DIR$/ch07/templates/index.html" />
+        <option value="$PROJECT_DIR$/ch07/templates/center.html" />
+        <option value="$PROJECT_DIR$/ch07/templates/update.html" />
+        <option value="$PROJECT_DIR$/ch07/settings.conf" />
+        <option value="$PROJECT_DIR$/ch07/web_server.py" />
+        <option value="$PROJECT_DIR$/ch07/run.sh" />
+        <option value="$PROJECT_DIR$/ch07/dynamic/mini_framework.py" />
+        <option value="$PROJECT_DIR$/ch08/__init__.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="186" />
+    <option name="y" value="55" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="coreProgramming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coreProgramming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coreProgramming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pyWorkspace\projects\coreProgramming\ch07\webserver\v2" />
+      <recent name="D:\pyWorkspace\projects\coreProgramming\ch07\webserver\v2\templates" />
+      <recent name="D:\pyWorkspace\projects\coreProgramming\game\res\nusic" />
+      <recent name="D:\pyWorkspace\projects\coreProgramming\game\res\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pyWorkspace\projects\coreProgramming\ch07" />
+      <recent name="D:\pyWorkspace\projects\coreProgramming\ch07\webserver" />
+      <recent name="D:\pyWorkspace\projects\coreProgramming\game" />
+      <recent name="D:\pyWorkspace\projects\coreProgramming\game\res" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.web_server (3)">
+    <configuration name="mini_framework" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="coreProgramming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch07/dynamic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch07/dynamic/mini_framework.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="coreProgramming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch07" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch07/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="coreProgramming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="coreProgramming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch07/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch07/test/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="web_server (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="coreProgramming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch07" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch07/web_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.web_server (3)" />
+        <item itemvalue="Python.test1 (1)" />
+        <item itemvalue="Python.test1" />
+        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.mini_framework" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8c1b354-9e04-4170-a98d-eb02ac8c8d1f" name="Default Changelist" comment="" />
+      <created>1580966488225</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580966488225</updated>
+      <workItem from="1580966489936" duration="14076000" />
+      <workItem from="1581046022763" duration="15387000" />
+      <workItem from="1581604745594" duration="25000" />
+      <workItem from="1581660375180" duration="13487000" />
+      <workItem from="1581735946165" duration="18391000" />
+      <workItem from="1581834556138" duration="19365000" />
+      <workItem from="1581917552011" duration="847000" />
+      <workItem from="1581931392369" duration="2416000" />
+      <workItem from="1582002467996" duration="2167000" />
+      <workItem from="1582467364764" duration="5089000" />
+      <workItem from="1582521973748" duration="22278000" />
+      <workItem from="1582606737995" duration="9075000" />
+      <workItem from="1582691558491" duration="9401000" />
+      <workItem from="1582768647288" duration="6285000" />
+      <workItem from="1582863037652" duration="1356000" />
+      <workItem from="1583217106501" duration="11875000" />
+      <workItem from="1583247404788" duration="5239000" />
+      <workItem from="1583299411259" duration="6963000" />
+      <workItem from="1583309840043" duration="3937000" />
+      <workItem from="1583380563419" duration="663000" />
+      <workItem from="1583478075237" duration="799000" />
+    </task>
+    <task id="LOCAL-00001" summary="python实现的简单的排序算法">
+      <created>1581664641442</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581664641442</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Python基础用法">
+      <created>1581687048957</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581687048957</updated>
+    </task>
+    <task id="LOCAL-00003" summary="飞机大战游戏">
+      <created>1581687151928</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581687151929</updated>
+    </task>
+    <task id="LOCAL-00004" summary="飞机大战游戏-加载背景图片和玩家飞机，并且让地图动起来">
+      <created>1581753236274</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581753236274</updated>
+    </task>
+    <task id="LOCAL-00005" summary="飞机大战游戏- 玩家飞机正常起飞">
+      <created>1581760537024</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581760537024</updated>
+    </task>
+    <task id="LOCAL-00006" summary="飞机大战游戏- 添加敌机和击落音效以及背景音乐">
+      <created>1581852137118</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581852137118</updated>
+    </task>
+    <task id="LOCAL-00007" summary="飞机大战游戏- 添加计算分数功能">
+      <created>1581860483194</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581860483194</updated>
+    </task>
+    <task id="LOCAL-00008" summary="闭包、装饰器、mini_framework\web_server">
+      <created>1582472749988</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582472749988</updated>
+    </task>
+    <task id="LOCAL-00009" summary="更新">
+      <created>1582542662518</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1582542662518</updated>
+    </task>
+    <task id="LOCAL-00010" summary="迷你网站矿建mini_framework\WSGI Server">
+      <created>1582543742460</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582543742460</updated>
+    </task>
+    <task id="LOCAL-00011" summary="给mini_framework添加路由">
+      <created>1582545392848</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1582545392848</updated>
+    </task>
+    <task id="LOCAL-00012" summary="web框架--显示数据库中数据">
+      <created>1582618031972</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1582618031972</updated>
+    </task>
+    <task id="LOCAL-00013" summary="web框架--添加个人中心">
+      <created>1582730188126</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1582730188126</updated>
+    </task>
+    <task id="LOCAL-00014" summary="web框架--添加关注、取消关注">
+      <created>1583250775131</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583250775151</updated>
+    </task>
+    <task id="LOCAL-00015" summary="web框架--添加修改备注">
+      <created>1583252645677</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1583252645677</updated>
+    </task>
+    <task id="LOCAL-00016" summary="web框架--添加备注信息">
+      <created>1583307268294</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1583307268294</updated>
+    </task>
+    <task id="LOCAL-00017" summary="web框架--http服务和web框架分离，并在命令行输入参数运行">
+      <created>1583309947323</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1583309947323</updated>
+    </task>
+    <task id="LOCAL-00018" summary="web框架--添加配置文件、运行日志已经run.sh脚本">
+      <created>1583316518810</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1583316518810</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Django相关工程文件">
+      <created>1583478182824</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1583478182824</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="169121000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="149" y="44" width="783" height="832" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39034483" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3696884" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49865952" weight="0.3243626" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="python实现的简单的排序算法" />
+    <MESSAGE value="Python基础用法" />
+    <MESSAGE value="飞机大战游戏" />
+    <MESSAGE value="飞机大战游戏-加载背景图片和玩家飞机，并且让地图动起来" />
+    <MESSAGE value="飞机大战游戏- 玩家飞机正常起飞" />
+    <MESSAGE value="飞机大战游戏- 添加敌机和击落音效以及背景音乐" />
+    <MESSAGE value="飞机大战游戏- 添加计算分数功能" />
+    <MESSAGE value="闭包、装饰器、mini_framework\web_server" />
+    <MESSAGE value="更新" />
+    <MESSAGE value="迷你网站矿建mini_framework\WSGI Server" />
+    <MESSAGE value="给mini_framework添加路由" />
+    <MESSAGE value="web框架--显示数据库中数据" />
+    <MESSAGE value="web框架--添加个人中心" />
+    <MESSAGE value="web框架--添加关注、取消关注" />
+    <MESSAGE value="web框架--添加修改备注" />
+    <MESSAGE value="web框架--添加备注信息" />
+    <MESSAGE value="web框架--http服务和web框架分离，并在命令行输入参数运行" />
+    <MESSAGE value="web框架--添加配置文件、运行日志已经run.sh脚本" />
+    <MESSAGE value="Django相关工程文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="Django相关工程文件" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../virtualenvs/coreProgramming/Lib/site-packages/pygame/draw_py.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#157#188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../virtualenvs/coreProgramming/Lib/site-packages/pygame/camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <folding>
+            <element signature="e#33#1696#0" />
+            <element signature="e#1715#1756#0" />
+            <element signature="e#1783#1888#0" />
+            <element signature="e#1914#1975#0" />
+            <element signature="e#2069#2142#0" />
+            <element signature="e#2197#2270#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/1199285046/pygame/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#315#391#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../virtualenvs/coreProgramming/Lib/site-packages/pygame/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1261">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="e#1166#1176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/game_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/game_score.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/bullet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/_plane_battle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#16#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/planes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/game_map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/closures/01.py" />
+    <entry file="file://$PROJECT_DIR$/ch07/decorators/test1.py" />
+    <entry file="file://$PROJECT_DIR$/ch07/decorators/test2.py" />
+    <entry file="file://$PROJECT_DIR$/ch07/decorators/test3.py" />
+    <entry file="file://$PROJECT_DIR$/ch07/webserver/mini_webframework.py" />
+    <entry file="file://$PROJECT_DIR$/ch07/decorators/test4.py" />
+    <entry file="file://$PROJECT_DIR$/ch07/webserver/v1/mini_framework.py" />
+    <entry file="file://$PROJECT_DIR$/ch07/static/js/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/webserver/v1/web_server.py" />
+    <entry file="file://$PROJECT_DIR$/ch07/static/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20524">
+          <caret line="733" column="17" lean-forward="true" selection-start-line="733" selection-start-column="17" selection-end-line="733" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/__init__.py" />
+    <entry file="file://D:/Anaconda/Lib/multiprocessing/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda/Lib/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/static/js/jquery-1.12.4.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/static/js/jquery-1.12.4.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/static/js/jquery-ui.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/static/js/zepto.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/main.py" />
+    <entry file="file://$PROJECT_DIR$/ch07/test.txt" />
+    <entry file="file://$PROJECT_DIR$/ch07/test.py" />
+    <entry file="file://$PROJECT_DIR$/ch07/test/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda/Lib/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="277" column="4" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/templates/center.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda/Lib/_bootlocale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/templates/update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="55" column="7" lean-forward="true" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/1199285046/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="565" column="4" selection-start-line="565" selection-start-column="4" selection-end-line="565" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/builtins.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="928" column="9" lean-forward="true" selection-start-line="928" selection-start-column="9" selection-end-line="928" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/seeting.conf" />
+    <entry file="file://$PROJECT_DIR$/ch07/test/settings.conf" />
+    <entry file="file://$PROJECT_DIR$/ch07/settings" />
+    <entry file="file://D:/Anaconda/Lib/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="1831" column="4" selection-start-line="1831" selection-start-column="4" selection-end-line="1831" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/settings.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/web_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/dynamic/mini_framework.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7168">
+          <caret line="260" column="44" selection-start-line="260" selection-start-column="44" selection-end-line="260" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch08/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
