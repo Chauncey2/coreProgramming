@@ -17,3 +17,8 @@
 + web_mini_framework (ch07文件夹)
 
 ****
+======2020.03.06======
+
++ Django练习代码--BookManegr
+
+****
