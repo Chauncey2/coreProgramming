@@ -17,7 +17,7 @@ class Solution:
         for item in s:
             # Return the number of non-overlapping occurrences of substring sub instring S[start:end].
             d[item] = s.count(item)
-
+        print(d)
         count=0
         for item in d.values():
             if item % 2 == 1:
@@ -26,6 +26,7 @@ class Solution:
             return True
 
         return False
+
 if __name__ == '__main__':
     s = Solution()
-    print(s.canPermutePalindrome(" "))
+    print(s.canPermutePalindrome("hello python"))

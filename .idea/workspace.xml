@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8c1b354-9e04-4170-a98d-eb02ac8c8d1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.01_判断字符是否唯一.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.02_判断是否为字符重排.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.03_URL化.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.04_回文排列.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.05_一次编辑.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeeCode/test/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeeCode/test/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.04_回文排列.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.04_回文排列.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +28,7 @@
     <SUITE FILE_PATH="coverage/coreProgramming$mtsleepF.coverage" NAME="mtsleepF Coverage Results" MODIFIED="1580974061648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch04" />
     <SUITE FILE_PATH="coverage/coreProgramming$01.coverage" NAME="01 Coverage Results" MODIFIED="1582467713282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/closures" />
     <SUITE FILE_PATH="coverage/coreProgramming$game_main.coverage" NAME="game_main Coverage Results" MODIFIED="1581759986917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
-    <SUITE FILE_PATH="coverage/coreProgramming$01_04_.coverage" NAME="01.04_回文排列 Coverage Results" MODIFIED="1583595267883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01" />
+    <SUITE FILE_PATH="coverage/coreProgramming$01_04_.coverage" NAME="01.04_回文排列 Coverage Results" MODIFIED="1583596152649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01" />
     <SUITE FILE_PATH="coverage/coreProgramming$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1582469055338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/decorators" />
     <SUITE FILE_PATH="coverage/coreProgramming$plane_battle.coverage" NAME="plane_battle Coverage Results" MODIFIED="1581736074961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
     <SUITE FILE_PATH="coverage/coreProgramming$web_server.coverage" NAME="web_server Coverage Results" MODIFIED="1582527349665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/webserver/v1.0" />
@@ -40,12 +38,13 @@
     <SUITE FILE_PATH="coverage/coreProgramming$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1582469732614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/decorators" />
     <SUITE FILE_PATH="coverage/coreProgramming$sort_util.coverage" NAME="sort_util Coverage Results" MODIFIED="1581664147140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch_al/sorted" />
     <SUITE FILE_PATH="coverage/coreProgramming$main.coverage" NAME="main Coverage Results" MODIFIED="1582555115355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
-    <SUITE FILE_PATH="coverage/coreProgramming$test1__2_.coverage" NAME="test1 (2) Coverage Results" MODIFIED="1583595177908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeeCode/test" />
+    <SUITE FILE_PATH="coverage/coreProgramming$test1__2_.coverage" NAME="test1 (2) Coverage Results" MODIFIED="1583677782758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeeCode/test" />
     <SUITE FILE_PATH="coverage/coreProgramming$web_server__2_.coverage" NAME="web_server (2) Coverage Results" MODIFIED="1582538485305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/webserver/v2" />
     <SUITE FILE_PATH="coverage/coreProgramming$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1582613321831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/test" />
     <SUITE FILE_PATH="coverage/coreProgramming$01_03_URL.coverage" NAME="01.03_URL化 Coverage Results" MODIFIED="1583577575002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeeCode/程序员面试金典" />
     <SUITE FILE_PATH="coverage/coreProgramming$heapq_func_too_.coverage" NAME="heapq_func_too; Coverage Results" MODIFIED="1581667896926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch_al/basic_grammar" />
     <SUITE FILE_PATH="coverage/coreProgramming$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1582469588458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/decorators" />
+    <SUITE FILE_PATH="coverage/coreProgramming$01_05_.coverage" NAME="01.05_一次编辑 Coverage Results" MODIFIED="1583677843960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01" />
     <SUITE FILE_PATH="coverage/coreProgramming$test.coverage" NAME="test Coverage Results" MODIFIED="1582537558587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/webserver/v2" />
     <SUITE FILE_PATH="coverage/coreProgramming$web_server__1_.coverage" NAME="web_server (1) Coverage Results" MODIFIED="1582527686712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/webserver/v1" />
     <SUITE FILE_PATH="coverage/coreProgramming$text4.coverage" NAME="text4 Coverage Results" MODIFIED="1580978270577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch05" />
@@ -53,20 +52,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.04_回文排列.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.05_一次编辑.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="11" selection-start-line="11" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="308">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LeeCode/test/test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="42" selection-end-column="17" />
+            <state relative-caret-position="245">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -92,7 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ch_al/basic_grammar/heapq_func_too;.py" />
         <option value="$PROJECT_DIR$/ch_al/projects/project.py" />
         <option value="$PROJECT_DIR$/game/plane_battle.py" />
         <option value="$PROJECT_DIR$/game/settings.py" />
@@ -141,8 +139,9 @@
         <option value="$PROJECT_DIR$/LeeCode/程序员面试金典/01.03_URL化.py" />
         <option value="$PROJECT_DIR$/LeeCode/程序员面试金典/01.04_回文排列.py" />
         <option value="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.03_URL化.py" />
-        <option value="$PROJECT_DIR$/LeeCode/test/test1.py" />
         <option value="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.04_回文排列.py" />
+        <option value="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.05_一次编辑.py" />
+        <option value="$PROJECT_DIR$/LeeCode/test/test1.py" />
       </list>
     </option>
   </component>
@@ -160,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,12 +170,6 @@
               <item name="coreProgramming" type="b2602c69:ProjectViewProjectNode" />
               <item name="coreProgramming" type="462c0819:PsiDirectoryNode" />
               <item name="LeeCode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="coreProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="coreProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="LeeCode" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="coreProgramming" type="b2602c69:ProjectViewProjectNode" />
@@ -205,6 +197,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,29 +236,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.01.04_回文排列">
-    <configuration name="01.01_判断字符是否唯一" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="coreProgramming" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeeCode/程序员面试金典" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\pyWorkspace\projects\coreProgramming\LeeCode\程序员面试金典\ch01\01.01_判断字符是否唯一.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.01.05_一次编辑">
     <configuration name="01.02_判断是否为字符重排" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="coreProgramming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -332,7 +303,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="罗马数字转换" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="01.05_一次编辑" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="coreProgramming" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -340,12 +311,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeeCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeeCode/罗马数字转换.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.05_一次编辑.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -378,11 +349,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.01.04_回文排列" />
+        <item itemvalue="Python.01.05_一次编辑" />
         <item itemvalue="Python.test1 (2)" />
+        <item itemvalue="Python.01.04_回文排列" />
         <item itemvalue="Python.01.03_URL化" />
         <item itemvalue="Python.01.02_判断是否为字符重排" />
-        <item itemvalue="Python.01.01_判断字符是否唯一" />
       </list>
     </recent_temporary>
   </component>
@@ -419,7 +390,8 @@
       <workItem from="1583478075237" duration="799000" />
       <workItem from="1583479935289" duration="47000" />
       <workItem from="1583497430418" duration="4866000" />
-      <workItem from="1583570476373" duration="15320000" />
+      <workItem from="1583570476373" duration="17376000" />
+      <workItem from="1583642354679" duration="13579000" />
     </task>
     <task id="LOCAL-00001" summary="python实现的简单的排序算法">
       <created>1581664641442</created>
@@ -561,11 +533,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583510624809</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="LeeCode试题">
+      <created>1583595371015</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1583595371015</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189354000" />
+    <option name="totallyTimeSpent" value="204989000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -580,7 +559,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20308311" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20576407" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -633,23 +612,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="LeeCode试题" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/game/bullet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/_plane_battle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="e#16#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game/planes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -785,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/builtins.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="928" column="9" lean-forward="true" selection-start-line="928" selection-start-column="9" selection-end-line="928" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ch07/seeting.conf" />
     <entry file="file://$PROJECT_DIR$/ch07/test/settings.conf" />
     <entry file="file://$PROJECT_DIR$/ch07/settings" />
@@ -892,24 +847,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.04_回文排列.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="253" column="9" selection-start-line="253" selection-start-column="9" selection-end-line="253" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/builtins.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="601" column="56" selection-start-line="601" selection-start-column="56" selection-end-line="601" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/1199285046/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="4737" column="28" lean-forward="true" selection-start-line="4737" selection-start-column="8" selection-end-line="4737" selection-end-column="28" />
+        <state relative-caret-position="145">
+          <caret line="3656" column="11" lean-forward="true" selection-start-line="3656" selection-start-column="11" selection-end-line="3656" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.05_一次编辑.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LeeCode/test/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="42" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch01/01.04_回文排列.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="11" selection-start-line="11" selection-end-line="27" selection-end-column="20" />
+        <state relative-caret-position="245">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>

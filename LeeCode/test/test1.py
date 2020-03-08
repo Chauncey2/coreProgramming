@@ -28,17 +28,3 @@
 #     print(''.join(item))
 
 
-a = 'aabbccc'
-a = set(a)
-print(a)
-d3 = dict()
-s='aabbccc'
-for x in s:
-    d3[x] = s.count(x) # Return the number of non-overlapping occurrences of substring sub in
-count=0
-for item in d3.values():
-    if item%2==1:
-        count+=1
-if count==1 or count==0:
-    print('true')
-print(list(d3.values()))
