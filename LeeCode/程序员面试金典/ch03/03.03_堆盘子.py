@@ -8,19 +8,29 @@
 当某个栈为空时，应当删除该栈。当栈中没有元素或不存在该栈时，pop，popAt 应返回 -1.
 """
 class StackOfPlates:
-
     def __init__(self, cap: int):
-        pass
-
+        self.cap = cap
+        self.stacks = []
 
     def push(self, val: int) -> None:
-        pass
+        if self.cap == 0:
+            return
+        if not self.stacks or len(self.stacks[-1]) == self.cap:
+            self.stacks.append([val])
+        else:
+            self.stacks[-1].append(val)
 
     def pop(self) -> int:
-        pass
+        return self.popAt(len(self.stacks) - 1)
 
     def popAt(self, index: int) -> int:
-        pass
+        if not self.stacks or index >= len(
+                self.stacks) or not self.stacks[index]:
+            return -1
+        res = self.stacks[index].pop()
+        if not self.stacks[index]:
+            self.stacks = self.stacks[0:index] + self.stacks[index + 1:]
+        return res
 
 
 # Your StackOfPlates object will be instantiated and called as such:

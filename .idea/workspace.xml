@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8c1b354-9e04-4170-a98d-eb02ac8c8d1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.02_栈的最小值.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.03_堆盘子.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.04_化栈为队.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.05_栈排序.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeeCode/test/test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeeCode/test/test3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.01_三合一.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.01_三合一.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.03_堆盘子.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.03_堆盘子.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +48,7 @@
     <SUITE FILE_PATH="coverage/coreProgramming$01_03_URL.coverage" NAME="01.03_URL化 Coverage Results" MODIFIED="1583577575002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeeCode/程序员面试金典" />
     <SUITE FILE_PATH="coverage/coreProgramming$heapq_func_too_.coverage" NAME="heapq_func_too; Coverage Results" MODIFIED="1581667896926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch_al/basic_grammar" />
     <SUITE FILE_PATH="coverage/coreProgramming$01_05_.coverage" NAME="01.05_一次编辑 Coverage Results" MODIFIED="1583677843960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeeCode/程序员面试金典/ch01" />
-    <SUITE FILE_PATH="coverage/coreProgramming$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1584002670938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeeCode/test" />
+    <SUITE FILE_PATH="coverage/coreProgramming$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1584161322670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeeCode/test" />
     <SUITE FILE_PATH="coverage/coreProgramming$test.coverage" NAME="test Coverage Results" MODIFIED="1582537558587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/webserver/v2" />
     <SUITE FILE_PATH="coverage/coreProgramming$web_server__1_.coverage" NAME="web_server (1) Coverage Results" MODIFIED="1582527686712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07/webserver/v1" />
     <SUITE FILE_PATH="coverage/coreProgramming$text4.coverage" NAME="text4 Coverage Results" MODIFIED="1580978270577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch05" />
@@ -71,19 +71,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.02_栈的最小值.py">
+        <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.04_化栈为队.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" selection-start-line="6" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="133">
+              <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.03_堆盘子.py">
+        <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.05_栈排序.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-56">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            <state relative-caret-position="217">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -109,8 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ch07/webserver/v1.0/mini_framework.py" />
-        <option value="$PROJECT_DIR$/ch07/webserver/v1.0/web_server.py" />
         <option value="$PROJECT_DIR$/ch07/webserver/v1/web_server.py" />
         <option value="$PROJECT_DIR$/ch07/webserver/v2/test.py" />
         <option value="$PROJECT_DIR$/ch07/webserver/v2/templates/index.html" />
@@ -157,9 +155,11 @@
         <option value="$PROJECT_DIR$/LeeCode/程序员面试金典/ch02/02.07_链表相交.py" />
         <option value="$PROJECT_DIR$/LeeCode/程序员面试金典/ch02/02.08_环路检测.py" />
         <option value="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.01_三合一.py" />
-        <option value="$PROJECT_DIR$/LeeCode/test/test3.py" />
         <option value="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.02_栈的最小值.py" />
         <option value="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.03_堆盘子.py" />
+        <option value="$PROJECT_DIR$/LeeCode/test/test3.py" />
+        <option value="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.04_化栈为队.py" />
+        <option value="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.05_栈排序.py" />
       </list>
     </option>
   </component>
@@ -416,7 +416,8 @@
       <workItem from="1583891584444" duration="4292000" />
       <workItem from="1583979467820" duration="8538000" />
       <workItem from="1584075888233" duration="594000" />
-      <workItem from="1584082637933" duration="3165000" />
+      <workItem from="1584082637933" duration="4377000" />
+      <workItem from="1584152266861" duration="10021000" />
     </task>
     <task id="LOCAL-00001" summary="python实现的简单的排序算法">
       <created>1581664641442</created>
@@ -600,11 +601,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583991182433</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="OJ试题">
+      <created>1584097594071</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1584097594071</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261729000" />
+    <option name="totallyTimeSpent" value="272962000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -618,12 +626,12 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19638069" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19906166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33994335" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33994335" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -672,8 +680,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="OJ试题" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ch07/main.py" />
-    <entry file="file://$PROJECT_DIR$/ch07/test.txt" />
     <entry file="file://$PROJECT_DIR$/ch07/test.py" />
     <entry file="file://$PROJECT_DIR$/ch07/test/test1.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -987,13 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LeeCode/test/test3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.01_三合一.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1010,8 +1009,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.03_堆盘子.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        <state relative-caret-position="261">
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeeCode/test/test3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.04_化栈为队.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.05_栈排序.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
