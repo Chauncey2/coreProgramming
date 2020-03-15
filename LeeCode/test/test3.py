@@ -5,9 +5,19 @@
 # print(~10)
 
 stack=[1,2,3]
-stack2=[]
-for i in range(3):
-    x=stack.pop()
-    stack2.append(x)
+stack.reverse()
+print(stack)
+# print(stack.pop())
+# print(stack)
 
-print(stack2)
+# def isEmpty(stack) -> bool:
+#     return False if len(stack) != 0 else True
+
+# print(isEmpty(stack))
+
+# stack2=[]
+# for i in range(3):
+#     x=stack.pop()
+#     stack2.append(x)
+#
+# print(stack2)

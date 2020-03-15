@@ -1,33 +1,68 @@
-"""
-栈排序。 编写程序，对栈进行排序使最小元素位于栈顶。
-最多只能使用一个其他的临时栈存放数据，但不得将元素复制到别的数据结构（如数组）中。
-该栈支持如下操作：push、pop、peek 和 isEmpty。当栈为空时，peek 返回 -1。
-
-解题思路：
-根据题目描述，是只要将最小元素置于栈顶即可，不需要其他位置有序
-
-"""
-
-
 class SortedStack:
 
     def __init__(self):
-        self.min_val = 0
         self.stack = []
 
     def push(self, val: int) -> None:
-        if not self.stack:
-            # 如果栈为空；
-            self.stack.append(val)
-            self.min_val=val
-        if self.min_val:
-            pass
+        self.stack.append(val)
+        self.swim(len(self.stack)-1)
 
     def pop(self) -> None:
-        pass
+        if not self.stack:
+            return
+        self.stack[0], self.stack[-1] = self.stack[-1], self.stack[0]
+        self.stack.pop()
+        self.sink(0)
 
     def peek(self) -> int:
-        pass
+        return self.stack[-1] if not self.stack else -1
 
     def isEmpty(self) -> bool:
-        pass
+        return not self.stack
+
+    def sink(self, index):
+        """
+        元素下沉
+        :param index:
+        :return:
+        """
+        n = len(self.stack)
+        while 2*index+1 < n:
+            j = 2*index+1
+            if j < n-1 and self.stack[j] > self.stack[j+1]:
+                j += 1
+            if self.stack[index] <= self.stack[j]:
+                break
+            self.stack[index], self.stack[j] = self.stack[j], self.stack[index]
+            index = j
+
+    def swim(self, index):
+        """
+        元素上浮
+        :param index:
+        :return:
+        """
+        while index > 0 and self.stack[index] < self.stack[(index-1)//2]:
+            self.stack[index], self.stack[(index-1)//2] = self.stack[(index-1)//2], self.stack[index]
+            index = (index-1)//2
+
+
+class SortedStack2:
+
+    def __init__(self):
+        self.stack = []
+
+    def push(self, val: int) -> None:
+        self.stack.append(val)
+        self.stack.reverse()
+
+    def pop(self) -> None:
+        if not self.stack:
+            return
+        self.stack.pop()
+
+    def peek(self) -> int:
+        return self.stack and self.stack[0] or -1
+
+    def isEmpty(self) -> bool:
+        return not self.stack
