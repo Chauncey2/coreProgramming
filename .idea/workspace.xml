@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8c1b354-9e04-4170-a98d-eb02ac8c8d1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.06_动物收容所.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeeCode/test/test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeeCode/test/test3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.05_栈排序.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeeCode/程序员面试金典/ch03/03.05_栈排序.py" afterDir="false" />
-    </list>
+    <list default="true" id="a8c1b354-9e04-4170-a98d-eb02ac8c8d1f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -429,7 +424,7 @@
       <workItem from="1584075888233" duration="594000" />
       <workItem from="1584082637933" duration="4377000" />
       <workItem from="1584152266861" duration="11836000" />
-      <workItem from="1584247738842" duration="7318000" />
+      <workItem from="1584247738842" duration="8320000" />
     </task>
     <task id="LOCAL-00001" summary="python实现的简单的排序算法">
       <created>1581664641442</created>
@@ -627,11 +622,18 @@
       <option name="project" value="LOCAL" />
       <updated>1584175338405</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="OJ试题">
+      <created>1584267375856</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1584267375857</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282095000" />
+    <option name="totallyTimeSpent" value="283097000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -644,14 +646,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20174263" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20174263" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33994335" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33994335" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

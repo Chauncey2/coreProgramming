@@ -12,23 +12,35 @@ dequeue*方法返回一个列表[动物编号, 动物种类]，若没有可以�
 class AnimalShelf:
 
     def __init__(self):
-        pass
+        self.elem = []
 
-    def enqueue(self, animal: list) -> None:
-        pass
+    def enqueue(self, animal: List[int]) -> None:
+        self.elem.insert(0, animal)
 
-    def dequeueAny(self) -> list:
-        pass
+    def dequeueAny(self) -> List[int]:
+        ret = [-1,-1]
+        if self.elem:
+            ret = self.elem.pop()
+        return ret
 
-    def dequeueDog(self) -> list:
-        pass
+    def dequeueDog(self) -> List[int]:
+        i = len(self.elem)-1
+        ret = [-1,-1]
+        while i>=0:
+            if self.elem[i][1] == 1:
+                ret = self.elem[i]
+                del self.elem[i]
+                break
+            i -= 1
+        return ret
 
-    def dequeueCat(self) -> list:
-        pass
-
-# Your AnimalShelf object will be instantiated and called as such:
-# obj = AnimalShelf()
-# obj.enqueue(animal)
-# param_2 = obj.dequeueAny()
-# param_3 = obj.dequeueDog()
-# param_4 = obj.dequeueCat()
+    def dequeueCat(self) -> List[int]:
+        i = len(self.elem)-1
+        ret = [-1,-1]
+        while i>=0:
+            if self.elem[i][1] == 0:
+                ret =  self.elem[i]
+                del self.elem[i]
+                break
+            i -= 1
+        return ret
